@@ -1,0 +1,4 @@
+2022-02-26 20:49:21 - select * from image where img_id=1
+2022-02-26 20:49:21 - select lan_id, lan_land from land
+2022-02-26 20:49:24 - SHOW FULL COLUMNS FROM image
+2022-02-26 20:49:24 - UPDATE image SET  img_title = 'Big Ben!'  ,  img_filename = 'london.jpg'  ,  img_width = '7899'  ,  img_height = '1200'  ,  img_lan_id = '5'  WHERE img_id = 1 

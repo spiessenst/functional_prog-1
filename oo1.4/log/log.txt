@@ -28,3 +28,7 @@
 2022-02-27 13:26:32 - UPDATE image SET  img_title = 'Big Ben!'  ,  img_filename = 'london.jpg'  ,  img_width = '7899'  ,  img_height = '1200'  ,  img_lan_id = '5'  WHERE img_id = 1 
 2022-02-27 13:26:46 - SELECT * FROM user WHERE usr_email='an@archan.be' 
 2022-02-27 13:26:46 - SELECT * FROM user WHERE usr_email='an@archan.be' 
+2022-02-27 13:37:29 - select * from image where img_id=2
+2022-02-27 13:37:29 - select lan_id, lan_land from land
+2022-02-27 13:37:32 - SHOW FULL COLUMNS FROM image
+2022-02-27 13:37:32 - UPDATE image SET  img_title = 'Eifeltorenn'  ,  img_filename = 'parijs.jpg'  ,  img_width = '2300'  ,  img_height = '1209'  ,  img_lan_id = '3'  WHERE img_id = 2 

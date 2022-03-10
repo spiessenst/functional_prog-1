@@ -11,6 +11,12 @@ class Container
 
     private $UserLoader;
 
+    private $Logger;
+
+    private $DBmanager;
+
+    private $MessageService;
+
 
 
     /**
@@ -66,6 +72,48 @@ class Container
         return $this->UserLoader;
 
 
+    }
+
+    /**
+     * @return Logger
+     */
+
+    public function getLogger() : Logger
+    {
+        if($this->Logger === null){
+
+            $this->Logger = new Logger();
+
+        }
+        return $this->Logger;
+    }
+
+    /**
+     * @return DBManager
+     */
+
+    public function getDBmanager() : DBManager
+    {
+        if($this->DBmanager === null){
+
+            $this->DBmanager = new DBmanager($this->getLogger());
+
+        }
+        return $this->DBmanager;
+    }
+
+    /**
+     * @return MessageService
+     */
+    public function getMessageService() : MessageService
+    {
+
+        if($this->MessageService === null){
+
+            $this->MessageService = new MessageService();
+
+        }
+        return $this->MessageService;
     }
 
 }

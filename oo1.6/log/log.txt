@@ -426,12 +426,89 @@
 2022-03-03 17:03:58 - select lan_id, lan_land from land
 2022-03-03 17:14:12 - select * from image where img_id=1
 2022-03-03 17:14:12 - select lan_id, lan_land from land
-2022-03-03 17:33:49 - select * from image where img_id=1
-2022-03-03 17:33:49 - select lan_id, lan_land from land
-2022-03-03 17:33:52 - SHOW FULL COLUMNS FROM image
-2022-03-03 17:33:52 - UPDATE image SET  img_title = 'Big Ben!'  ,  img_filename = 'london.jpg'  ,  img_width = '7899'  ,  img_height = '1200'  ,  img_lan_id = '5'  WHERE img_id = 1 
-2022-03-03 17:33:55 - select * from image where img_id=1
-2022-03-03 17:33:55 - select lan_id, lan_land from land
-2022-03-03 17:33:59 - SHOW FULL COLUMNS FROM image
-2022-03-03 17:33:59 - select * from image where img_id=1
-2022-03-03 17:33:59 - select lan_id, lan_land from land
+2022-03-08 11:19:50 - SELECT * FROM user WHERE usr_email='spiessenst@gmail.com' 
+2022-03-08 11:19:50 - SELECT * FROM user WHERE usr_email='spiessenst@gmail.com' 
+2022-03-08 11:21:23 - select * from image where img_id=1
+2022-03-08 11:21:23 - select lan_id, lan_land from land
+2022-03-08 11:32:42 - select * from image where img_id=1
+2022-03-08 11:32:42 - select lan_id, lan_land from land
+2022-03-08 11:32:44 - SHOW FULL COLUMNS FROM image
+2022-03-08 11:32:44 - select * from image where img_id=1
+2022-03-08 11:32:44 - select lan_id, lan_land from land
+2022-03-08 11:32:55 - SELECT * FROM user WHERE usr_email='spiessenst@gmail.com' 
+2022-03-08 11:32:55 - SELECT * FROM user WHERE usr_email='spiessenst@gmail.com' 
+2022-03-08 12:02:29 - select * from image where img_id=2
+2022-03-08 12:02:29 - select lan_id, lan_land from land
+2022-03-08 12:02:33 - SHOW FULL COLUMNS FROM image
+2022-03-08 12:02:33 - UPDATE image SET  img_title = 'Eifeltoren'  ,  img_filename = 'parijs.jpg'  ,  img_width = '2300'  ,  img_height = '1209'  ,  img_lan_id = '3'  WHERE img_id = 2 
+2022-03-08 12:34:31 - SELECT * FROM user WHERE usr_email='spiessenst@gmail.com' 
+2022-03-08 12:34:31 - SELECT * FROM user WHERE usr_email='spiessenst@gmail.com' 
+2022-03-08 12:35:12 - select * from image where img_id=1
+2022-03-08 12:35:12 - select lan_id, lan_land from land
+2022-03-10 11:00:31 - SELECT * FROM user WHERE usr_email='spiessenst@gmail.com' 
+2022-03-10 11:00:31 - SELECT * FROM user WHERE usr_email='spiessenst@gmail.com' 
+2022-03-10 11:01:38 - select * from image where img_id=1
+2022-03-10 11:01:38 - select lan_id, lan_land from land
+2022-03-10 11:19:24 - select * from image where img_id=1
+2022-03-10 11:19:24 - select lan_id, lan_land from land
+2022-03-10 11:22:57 - SHOW FULL COLUMNS FROM user
+2022-03-10 11:28:19 - SELECT * FROM user WHERE usr_email='spiessenst@gmail.com' 
+2022-03-10 11:28:19 - SELECT * FROM user WHERE usr_email='spiessenst@gmail.com' 
+2022-03-10 11:29:36 - SELECT * FROM user WHERE usr_email='spiessenst@gmail.com' 
+2022-03-10 11:29:36 - SELECT * FROM user WHERE usr_email='spiessenst@gmail.com' 
+2022-03-10 11:30:40 - SELECT * FROM user WHERE usr_email='spiessenst@gmail.com' 
+2022-03-10 11:30:40 - SELECT * FROM user WHERE usr_email='spiessenst@gmail.com' 
+2022-03-10 11:37:00 - SELECT * FROM user WHERE usr_email='spiessenst@gmail.com' 
+2022-03-10 11:39:33 - select * from image where img_id=1
+2022-03-10 11:39:33 - select lan_id, lan_land from land
+2022-03-10 11:39:37 - SHOW FULL COLUMNS FROM image
+2022-03-10 11:41:46 - select * from image where img_id=1
+2022-03-10 11:41:46 - select lan_id, lan_land from land
+2022-03-10 11:41:51 - SELECT * FROM user WHERE usr_email='spiessenst@gmail.com' 
+2022-03-10 11:41:51 - Array
+2022-03-10 11:44:04 - SELECT * FROM user WHERE usr_email='spiessenst@gmail.com'
+2022-03-10 11:46:01 - SELECT * FROM user WHERE usr_email='spiessenst@gmail.com'
+2022-03-10 11:46:55 - SELECT * FROM user WHERE usr_email='spiessenst@gmail.com'
+2022-03-10 12:00:40 - select * from image where img_id=1
+2022-03-10 12:00:40 - select lan_id, lan_land from land
+2022-03-10 12:00:45 - select * from image where img_id=1
+2022-03-10 12:00:45 - select lan_id, lan_land from land
+2022-03-10 12:01:18 - select * from image where img_id=1
+2022-03-10 12:01:18 - select lan_id, lan_land from land
+2022-03-10 13:26:07 - select * from image where img_id=1
+2022-03-10 13:26:07 - select lan_id, lan_land from land
+2022-03-10 13:26:10 - select * from image where img_id=1
+2022-03-10 13:26:10 - select lan_id, lan_land from land
+2022-03-10 13:30:38 - select * from image where img_id=1
+2022-03-10 13:30:38 - select lan_id, lan_land from land
+2022-03-10 13:32:25 - select * from image where img_id=1
+2022-03-10 13:32:25 - select lan_id, lan_land from land
+2022-03-10 13:32:28 - SHOW FULL COLUMNS FROM image
+2022-03-10 13:33:01 - select * from image where img_id=1
+2022-03-10 13:33:01 - select lan_id, lan_land from land
+2022-03-10 13:33:04 - SHOW FULL COLUMNS FROM image
+2022-03-10 13:34:19 - select * from image where img_id=1
+2022-03-10 13:34:19 - select lan_id, lan_land from land
+2022-03-10 13:34:22 - SHOW FULL COLUMNS FROM image
+2022-03-10 13:34:22 - UPDATE image SET  img_title = 'Big Ben!ssssdsd'  ,  img_filename = 'london.jpg'  ,  img_width = '7899'  ,  img_height = '1200'  ,  img_lan_id = '5'  WHERE img_id = 1 
+2022-03-10 13:34:24 - select * from image where img_id=1
+2022-03-10 13:34:24 - select lan_id, lan_land from land
+2022-03-10 13:34:29 - SHOW FULL COLUMNS FROM image
+2022-03-10 13:34:29 - UPDATE image SET  img_title = 'Big Ben!'  ,  img_filename = 'london.jpg'  ,  img_width = '7899'  ,  img_height = '1200'  ,  img_lan_id = '5'  WHERE img_id = 1 
+2022-03-10 13:34:36 - select * from image where img_id=1
+2022-03-10 13:34:36 - select lan_id, lan_land from land
+2022-03-10 13:34:39 - SHOW FULL COLUMNS FROM image
+2022-03-10 13:34:39 - select * from image where img_id=1
+2022-03-10 13:34:39 - select lan_id, lan_land from land
+2022-03-10 13:34:49 - SHOW FULL COLUMNS FROM image
+2022-03-10 13:34:49 - UPDATE image SET  img_title = 'Big Ben!'  ,  img_filename = 'london.jpg'  ,  img_width = '7899'  ,  img_height = '1200'  ,  img_lan_id = '5'  WHERE img_id = 1 
+2022-03-10 13:34:53 - SHOW FULL COLUMNS FROM user
+2022-03-10 13:35:48 - SHOW FULL COLUMNS FROM user
+2022-03-10 13:36:34 - SHOW FULL COLUMNS FROM user
+2022-03-10 13:36:34 - SELECT * FROM user WHERE usr_email=''
+2022-03-10 13:36:41 - SHOW FULL COLUMNS FROM user
+2022-03-10 13:36:41 - SELECT * FROM user WHERE usr_email='cwcw'
+2022-03-10 13:36:47 - select * from image where img_id=1
+2022-03-10 13:36:47 - select lan_id, lan_land from land
+2022-03-10 13:36:52 - SHOW FULL COLUMNS FROM user
+2022-03-10 13:36:52 - SELECT * FROM user WHERE usr_email='spiessenst@gmail.com'

@@ -2,14 +2,14 @@
 require_once "autoload.php";
 
 
-function CompareWithDatabase( $table, $pkey ): void
+function CompareWithDatabase( $table, $pkey , $container ): void
 {
-    $Logger = new Logger();
+    //$Logger = new Logger();
 
-    $dbm = new DBManager($Logger);
-    global $ms;
+   // $dbm = new DBManager($Logger);
+   // global $ms;
 
-    $data = $dbm->getData( "SHOW FULL COLUMNS FROM $table" );
+    $data = $container->getDBmanager()->getData( "SHOW FULL COLUMNS FROM $table" );
 
 
     //overloop alle in de databank gedefinieerde velden van de tabel
@@ -33,7 +33,7 @@ function CompareWithDatabase( $table, $pkey ): void
                 if ( ! isInt($sent_value) ) //nee
                 {
                     $msg = $sent_value . " moet een geheel getal zijn";
-                    $ms->AddMessage( "input_errors", $msg, $fieldname );
+                    $container->getMessageService()->AddMessage( "input_errors", $msg, $fieldname );
 
 
                 }
@@ -50,7 +50,7 @@ function CompareWithDatabase( $table, $pkey ): void
                 if ( ! is_numeric($sent_value) ) //nee
                 {
                     $msg = $sent_value . " moet een getal zijn (eventueel met decimalen)";
-                    $ms->AddMessage( "input_errors", $msg, $fieldname );
+                    $container->getMessageService()->AddMessage( "input_errors", $msg, $fieldname );
                 }
                 else //ja
                 {
@@ -65,7 +65,7 @@ function CompareWithDatabase( $table, $pkey ): void
                 if ( strlen($sent_value) > $length )
                 {
                     $msg = "Dit veld kan maximum $length tekens bevatten";
-                    $ms->AddMessage( "input_errors", $msg, $fieldname );
+                    $container->getMessageService()->AddMessage( "input_errors", $msg, $fieldname );
                 }
             }
 
@@ -75,7 +75,7 @@ function CompareWithDatabase( $table, $pkey ): void
                 if ( ! isDate( $sent_value) )
                 {
                     $msg = $sent_value . " is geen geldige datum";
-                    $ms->AddMessage( "input_errors", $msg, $fieldname );
+                    $container->getMessageService()->AddMessage( "input_errors", $msg, $fieldname );
                 }
             }
 
@@ -84,20 +84,20 @@ function CompareWithDatabase( $table, $pkey ): void
     }
 }
 
-function ValidateUsrPassword( $password )
+function ValidateUsrPassword( $password , $container )
 {
     global $ms;
     if ( strlen($password) < 8 )
     {
        // $_SESSION['errors']['usr_password_error'] = "Het wachtwoord moet minstens 8 tekens bevatten";
-        $ms->AddMessage( "input_errors", "Het wachtwoord moet minstens 8 tekens bevatten", 'usr_password' );
+        $container->getMessageService()->AddMessage( "input_errors", "Het wachtwoord moet minstens 8 tekens bevatten", 'usr_password' );
         return false;
     }
 
     return true;
 }
 
-function ValidateUsrEmail( $email )
+function ValidateUsrEmail( $email ,$container)
 {
     global $ms;
     if (filter_var($email, FILTER_VALIDATE_EMAIL))
@@ -108,28 +108,30 @@ function ValidateUsrEmail( $email )
     {
       //  $_SESSION['errors']['usr_email_error'] = "Geen geldig e-mailadres!";
 
-        $ms->AddMessage( "input_errors", "Geen geldig e-mailadres!", 'usr_email' );
+        $container->getMessageService()->AddMessage( "input_errors", "Geen geldig e-mailadres!", 'usr_email' );
         return false;
     }
 }
 
-function CheckUniqueUsrEmail( $email )
+function CheckUniqueUsrEmail( $email , $container)
 {
 
-    global $ms;
+   // global $ms;
     $sql = "SELECT * FROM user WHERE usr_email='" . $email . "'";
 
-    $Logger = new Logger();
+  //  $Logger = new Logger();
 
-    $dbm = new DBManager($Logger);
-    $rows = $dbm->getData($sql);
+   // $dbm = new DBManager($Logger);
+   // $rows = $dbm->getData($sql);
+
+    $rows = $container->getDBManager()->getData($sql);
 
 
 
     if (count($rows) > 0)
     {
         //$_SESSION['errors']['usr_email_error'] = "Er bestaat al een gebruiker met dit e-mailadres";
-        $ms->AddMessage( "input_errors", "Er bestaat al een gebruiker met dit e-mailadres", 'usr_email' );
+        $container->getMessageService()->AddMessage( "input_errors", "Er bestaat al een gebruiker met dit e-mailadres", 'usr_email' );
         return false;
     }
 

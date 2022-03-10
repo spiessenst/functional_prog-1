@@ -5,14 +5,13 @@ ini_set( 'display_errors', 1 );
 $public_access = true;
 require_once "autoload.php";
 
-SaveFormData();
+SaveFormData($container);
 
 
 
-function SaveFormData()
+function SaveFormData($container)
 {
 
-    global $ms;
     if ( $_SERVER['REQUEST_METHOD'] == "POST" )
     {
 
@@ -41,21 +40,21 @@ function SaveFormData()
         //validation
         $sending_form_uri = $_SERVER['HTTP_REFERER'];
 
-        CompareWithDatabase( $table, $pkey );
+        CompareWithDatabase( $table, $pkey ,$container);
 
         //Validaties voor het registratieformulier
         if ( $table == "user")
         {
 
-                 ValidateUsrPassword( $_POST['usr_password'] );
-                ValidateUsrEmail( $_POST['usr_email'] );
-                CheckUniqueUsrEmail( $_POST['usr_email'] );
+                 ValidateUsrPassword( $_POST['usr_password'] , $container );
+                ValidateUsrEmail( $_POST['usr_email'] , $container);
+                CheckUniqueUsrEmail( $_POST['usr_email'] ,$container );
 
         }
 
 
         //terugkeren naar afzender als er een fout is
-        if ( $ms->CountNewErrors() > 0 OR $ms->CountNewInputErrors() )
+        if ( $container->getMessageService()->CountNewErrors() > 0 OR $container->getMessageService()->CountNewInputErrors() )
         {
             $_SESSION['OLD_POST'] = $_POST;
             header( "Location: " . $sending_form_uri ); exit();
@@ -88,7 +87,7 @@ function SaveFormData()
                 $value = password_hash( $value, PASSWORD_BCRYPT );
                 $keys_values[] = " $field = '$value' " ;
 
-                $ms->AddMessage("info", "Bedankt voor uw registratie");
+                $container()->getMessageService()->AddMessage("info", "Bedankt voor uw registratie");
             }
             else //all other data-fields
             {
@@ -106,9 +105,10 @@ function SaveFormData()
         $sql .= $where;
 
         //run SQL
-        $Logger = new Logger();
-        $dbm = new DBManager($Logger);
-        $result = $dbm->ExecuteSQL( $sql );
+       // $Logger = new Logger();
+      //  $dbm = new DBManager($Logger);
+       // $result = $dbm->ExecuteSQL( $sql );
+        $result = $container->getDBManager()->ExecuteSQL( $sql );
 
         //output if not redirected
         print $sql ;

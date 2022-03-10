@@ -16,20 +16,21 @@ PrintNavbar();
 
 <?php
 
-$ms->ShowErrors();
-$ms->ShowInfos();
+//$ms->ShowErrors();
+ $container->getMessageService()->ShowErrors();
+ $container->getMessageService()->ShowInfos();
+//$ms->ShowInfos();
 
-$container = new Container($configuration);
-$CityLoader = $container->getCityLoader();
-$city = $CityLoader->getCities();
-
+//$container = new Container($configuration);
+//$CityLoader = $container->getCityLoader();
+//$city = $CityLoader->getCities();
 
 
     //get template
     $template = file_get_contents("templates/column.html");
 
     //merge
-    $output = MergeViewWithDataObj( $template, $city );
+    $output = MergeViewWithDataObj( $template, $container->getCityLoader()->getCities() );
     print $output;
 ?>
 

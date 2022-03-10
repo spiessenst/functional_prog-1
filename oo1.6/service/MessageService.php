@@ -22,7 +22,7 @@ class MessageService
     public function CountNewErrors()
     {
         if ( isset($_SESSION['errors']) ) return count($_SESSION['errors']);
-        else return 0;
+
     }
 
     public function CountErrors()
@@ -34,7 +34,7 @@ class MessageService
     public function CountNewInputErrors()
     {
         if ( isset($_SESSION['input_errors']) ) return count($_SESSION['input_errors']);
-        else return 0;
+
     }
 
 

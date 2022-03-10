@@ -39,7 +39,7 @@ PrintNavbar();
             $output = MergeViewWithData( $output, $data );
             $output = MergeViewWithExtraElements( $output, $extra_elements );
 
-            $output = MergeViewWithErrors( $output, $ms->GetInputErrors() );
+            $output = MergeViewWithErrors( $output, $container->getMessageService()->GetInputErrors() );
             $output = RemoveEmptyErrorTags( $output, $data );
 
             print $output;

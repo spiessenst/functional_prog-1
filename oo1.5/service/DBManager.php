@@ -3,9 +3,7 @@
 class DBManager
 {
 
-
 private $logger;
-
 
 
     public function __construct($logger)

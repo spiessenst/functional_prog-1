@@ -40,12 +40,14 @@ require_once "$path2/service/MessageService.php";
 if(!isset($_SESSION["input_errors"])) $_SESSION["input_errors"] = [];
 if(!isset($_SESSION["errors"])) $_SESSION["errors"] = [];
 if(!isset($_SESSION["infos"])) $_SESSION["infos"] = [];
-$logger = new Logger();
-$ms = new MessageService();
+
+//$logger = new Logger();
+//$ms = new MessageService();
+
 require_once "access_control.php";
 
 
-$dbm = new DBManager($logger);
+//$dbm = new DBManager($logger);
 
 $configuration = array(
 
@@ -54,6 +56,8 @@ $configuration = array(
     'db_pass' => 'root'
 
 );
+
+$container = new Container($configuration);
 
 
 

@@ -7,7 +7,7 @@ require_once "lib/autoload.php";
 
 PrintHead();
 PrintJumbo( $title = "Registreer", $subtitle = "" );
-global $ms
+
 ?>
 
 <div class="container">
@@ -37,7 +37,7 @@ global $ms
             $output = MergeViewWithData( $output, $data );
             $output = MergeViewWithExtraElements( $output, $extra_elements );
 
-            $output = MergeViewWithErrors( $output, $ms->GetInputErrors() );
+            $output = MergeViewWithErrors( $output,  $container->getMessageService()->GetInputErrors());
 
 
             $output = RemoveEmptyErrorTags( $output, $data );

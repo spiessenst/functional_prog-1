@@ -5,18 +5,20 @@ ini_set( 'display_errors', 1 );
 
 $public_access = true;
 require_once "autoload.php";
-global $ms;
 
-$user = LoginCheck();
+
+
+$user = LoginCheck($container);
 
 if ( $user )
 {
-    $user = new User($user['usr_id'], $user['usr_voornaam'],$user['usr_naam'] , $user['usr_email']);
+
 
     $_SESSION['user'] = $user;
 
 
-    $ms->AddMessage("infos", "Welkom, " . $_SESSION['user']->getFirstName());
+    $container->getMessageService()->AddMessage("infos", "Welkom, " . $_SESSION['user']->getFirstName());
+
     header("Location: ../steden.php");
 }
 else
@@ -25,7 +27,7 @@ else
     GoToNoAccess();
 }
 
-function LoginCheck()
+function LoginCheck($container)
 {
     if ( $_SERVER['REQUEST_METHOD'] == "POST" )
     {
@@ -68,18 +70,23 @@ function LoginCheck()
         $email = $_POST['usr_email'];
         $ww = $_POST['usr_password'];
 
-        $sql = "SELECT * FROM user WHERE usr_email='$email' ";
 
-        $logger = new Logger();
-        $logger->Log($sql);
-        $dbm = new DBManager($logger);
-        $data = $dbm->getData($sql);
+
+        //  $logger = new Logger();
+      //  $logger->Log($sql);
+      //  $dbm = new DBManager($logger);
+      //  $data = $dbm->getData($sql);
+
+        $data = $container->getDBmanager()->getData("SELECT * FROM user WHERE usr_email='$email'");
 
         if ( count($data) > 0 )
         {
             foreach ( $data as $row )
             {
-                if ( password_verify( $ww, $row['usr_password'] ) ) return $row;
+                if ( password_verify( $ww, $row['usr_password'] ) ) {
+                    $user = new User($row['usr_id'], $row['usr_voornaam'],$row['usr_naam'] , $row['usr_email']);
+                    return $user;
+                }
             }
         }
 

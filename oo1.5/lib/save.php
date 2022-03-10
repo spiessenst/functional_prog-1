@@ -46,7 +46,7 @@ function SaveFormData($container)
         if ( $table == "user")
         {
 
-                 ValidateUsrPassword( $_POST['usr_password'] , $container );
+                ValidateUsrPassword( $_POST['usr_password'] , $container );
                 ValidateUsrEmail( $_POST['usr_email'] , $container);
                 CheckUniqueUsrEmail( $_POST['usr_email'] ,$container );
 

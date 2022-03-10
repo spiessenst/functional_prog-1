@@ -87,7 +87,7 @@ function SaveFormData($container)
                 $value = password_hash( $value, PASSWORD_BCRYPT );
                 $keys_values[] = " $field = '$value' " ;
 
-                $container()->getMessageService()->AddMessage("info", "Bedankt voor uw registratie");
+                $container->getMessageService()->AddMessage("info", "Bedankt voor uw registratie");
             }
             else //all other data-fields
             {

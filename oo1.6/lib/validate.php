@@ -86,7 +86,7 @@ function CompareWithDatabase( $table, $pkey , $container ): void
 
 function ValidateUsrPassword( $password , $container )
 {
-    global $ms;
+   // global $ms;
     if ( strlen($password) < 8 )
     {
        // $_SESSION['errors']['usr_password_error'] = "Het wachtwoord moet minstens 8 tekens bevatten";
@@ -99,7 +99,7 @@ function ValidateUsrPassword( $password , $container )
 
 function ValidateUsrEmail( $email ,$container)
 {
-    global $ms;
+    //global $ms;
     if (filter_var($email, FILTER_VALIDATE_EMAIL))
     {
         return true;

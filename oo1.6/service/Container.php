@@ -96,7 +96,7 @@ class Container
     {
         if($this->DBmanager === null){
 
-            $this->DBmanager = new DBmanager($this->getLogger());
+            $this->DBmanager = new DBmanager($this->getLogger() , $this->getPdo() );
 
         }
         return $this->DBmanager;

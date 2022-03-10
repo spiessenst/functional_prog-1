@@ -60,8 +60,6 @@ $configuration = array(
 $container = new Container($configuration);
 
 
-
-
 //initialize $old_post
 $old_post = [];
 

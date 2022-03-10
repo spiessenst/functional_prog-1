@@ -3,22 +3,26 @@
 class DBManager
 {
 
-private $logger;
+private Logger $logger;
 
+private  $pdo;
 
-    public function __construct($logger)
+    public function __construct($logger  , $pdo )
     {
         $this->logger = $logger;
+
+        $this->pdo = $pdo;
     }
 
-    function CreateConnection()
+    public function CreateConnection()
     {
-        global $conn;
-        global $servername, $dbname, $username, $password;
+       // global $conn;
+
 
         // Create and check connection
+
         try {
-            $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
+            $conn = $this->pdo;
             $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         }
         catch(PDOException $e) {
@@ -26,9 +30,13 @@ private $logger;
         }
     }
 
-    function GetData( $sql )
+    public function GetData( $sql )
     {
-        global $conn;
+
+
+
+        $conn =  $this->pdo;
+        $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
         $this->logger->Log($sql);
         $this->CreateConnection();
@@ -55,9 +63,12 @@ private $logger;
 
     function ExecuteSQL( $sql )
     {
-        global $conn;
+
         $this->logger->Log($sql);
         $this->CreateConnection();
+
+        $conn =   $this->pdo;
+        $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
         //define and execute query
         $result = $conn->query( $sql );

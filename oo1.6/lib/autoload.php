@@ -18,36 +18,28 @@ $request_uri = explode("/", $_SERVER['REQUEST_URI']);
 $app_root = "/" . $request_uri[1] . "/" . $request_uri[2];
 
 
-
-require_once "connection_data.php";
-require_once "pdo.php";
 require_once "html_functions.php";
 require_once "form_elements.php";
-require_once "sanitize.php";
-require_once "validate.php";
-require_once "security.php";
 
 
 
-//require_once "$path2/service/__UserLoader.php";
+//require_once "$path2/service/UserLoader.php";
 require_once "$path2/service/CityLoader.php";
 require_once "$path2/service/Container.php";
 require_once "$path2/service/DBManager.php";
 require_once "$path2/service/Logger.php";
 require_once "$path2/service/MessageService.php";
+require_once "$path2/service/Sanitization.php";
+require_once "$path2/service/CompareWithDatabase.php";
+require_once "$path2/service/CSRF.php";
+
 
 
 if(!isset($_SESSION["input_errors"])) $_SESSION["input_errors"] = [];
 if(!isset($_SESSION["errors"])) $_SESSION["errors"] = [];
 if(!isset($_SESSION["infos"])) $_SESSION["infos"] = [];
 
-//$logger = new Logger();
-//$ms = new MessageService();
-
 require_once "access_control.php";
-
-
-//$dbm = new DBManager($logger);
 
 $configuration = array(
 

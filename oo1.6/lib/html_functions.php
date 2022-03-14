@@ -49,29 +49,6 @@ function MergeViewWithData( $template, $data )
     return $returnvalue;
 }
 
-function MergeViewWithDataObj( $template, $data )
-{
-    $returnvalue = "";
-
-    foreach ( $data as $obj )
-    {
-        $output = $template;
-        $output = str_replace("@img_id@" , $obj->getId() , $output);
-        $output = str_replace("@img_title@" , $obj->getTitle() , $output);
-        $output = str_replace("@img_filename@" , $obj->getFilename(), $output);
-        $output = str_replace("@img_width@" , $obj->getWidth(), $output);
-        $output = str_replace("@img_height@" , $obj->getHeight(), $output);
-
-        $returnvalue .= $output;
-    }
-
-    if ( $data == [] )
-    {
-        $returnvalue = $template;
-    }
-
-    return $returnvalue;
-}
 
 function MergeViewWithExtraElements( $template, $elements )
 {

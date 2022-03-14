@@ -6,8 +6,6 @@ class CityLoader
     private PDO $pdo;
 
 
-
-
     /**
      * @param $pdo
      */
@@ -37,9 +35,9 @@ class CityLoader
     public function getCityByID($id)
     {
 
-        $pdo = $this->getPDO();
 
-        $statement = $pdo->prepare('SELECT * FROM image WHERE img_id = :id');
+
+        $statement = $this->pdo->prepare('SELECT * FROM image WHERE img_id = :id');
         $statement->execute(array('id' => $id));
         $cityArray = $statement->fetch(PDO::FETCH_ASSOC);
 
@@ -61,27 +59,19 @@ class CityLoader
         return $city;
 
 
-
-
     }
 
 
 
 private function queryForCities(){
 
-    $pdo  =$this->getPDO();
 
-    $statement = $pdo->prepare('SELECT * FROM image');
+    $statement = $this->pdo->prepare('SELECT * FROM image');
     $statement->execute();
     return $statement->fetchAll(PDO::FETCH_ASSOC);
 
 }
 
 
-private function getPDO(){
-
-    return $this->pdo;
-
-}
 
 }

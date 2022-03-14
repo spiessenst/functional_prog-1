@@ -18,9 +18,7 @@ class UserLoader
     public function getUserByEmail($email)
     {
 
-        $pdo = $this->getPDO();
-
-        $statement = $pdo->prepare('SELECT * FROM user WHERE usr_email = :email');
+        $statement = $this->pdo->prepare('SELECT * FROM user WHERE usr_email = :email');
         $statement->execute(array('email' => $email));
         $userArray = $statement->fetch(PDO::FETCH_ASSOC);
 
@@ -37,13 +35,8 @@ class UserLoader
 
         return $user;
 
-
     }
 
-    private function getPDO(){
 
-        return $this->pdo;
-
-    }
 
 }

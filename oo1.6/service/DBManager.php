@@ -16,10 +16,7 @@ private  $pdo;
 
     public function CreateConnection()
     {
-       // global $conn;
 
-
-        // Create and check connection
 
         try {
             $conn = $this->pdo;

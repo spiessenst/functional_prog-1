@@ -13,9 +13,7 @@ $user = LoginCheck($container);
 if ( $user )
 {
 
-
     $_SESSION['user'] = $user;
-
 
     $container->getMessageService()->AddMessage("infos", "Welkom, " . $_SESSION['user']->getFirstName());
 
@@ -38,27 +36,31 @@ function LoginCheck($container)
         $_SESSION['lastest_csrf'] = "";
 
         //sanitization
-        $_POST = StripSpaces($_POST);
-        $_POST = ConvertSpecialChars($_POST);
+
+        $_POST = $container->getSanitization()->StripSpaces($_POST);
+        $_POST = $container->getSanitization()->ConvertSpecialChars($_POST);
+
 
         //validation
         $sending_form_uri = $_SERVER['HTTP_REFERER'];
 
         //Validaties voor het loginformulier
+
         if ( true )
         {
             if ( ! key_exists("usr_email", $_POST ) OR strlen($_POST['usr_email']) < 5 )
             {
-                $_SESSION['errors']['usr_password'] = "Het wachtwoord is niet correct ingevuld";
+
+                $container->getMessageService()->AddMessage("input_errors" , "Het email adres is niet correct ingevuld" , "usr_email");
             }
             if ( ! key_exists("usr_password", $_POST ) OR strlen($_POST['usr_password']) < 8 )
             {
-                $_SESSION['errors']['usr_password'] = "Het wachtwoord is niet correct ingevuld";
+                $container->getMessageService()->AddMessage("input_errors" , "Het wachtwoord is niet correct ingevuld" ,"usr_password");
             }
         }
 
         //terugkeren naar afzender als er een fout is
-        if ( key_exists("errors" , $_SESSION ) AND count($_SESSION['errors']) > 0 )
+        if ( $container->getMessageService()->CountNewErrors() > 0 OR $container->getMessageService()->CountNewInputErrors() )
         {
             $_SESSION['OLD_POST'] = $_POST;
             header( "Location: " . $sending_form_uri ); exit();
@@ -70,12 +72,6 @@ function LoginCheck($container)
         $email = $_POST['usr_email'];
         $ww = $_POST['usr_password'];
 
-
-
-        //  $logger = new Logger();
-      //  $logger->Log($sql);
-      //  $dbm = new DBManager($logger);
-      //  $data = $dbm->getData($sql);
 
         $data = $container->getDBmanager()->getData("SELECT * FROM user WHERE usr_email='$email'");
 

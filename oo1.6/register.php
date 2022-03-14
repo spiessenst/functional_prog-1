@@ -31,7 +31,7 @@ PrintJumbo( $title = "Registreer", $subtitle = "" );
             $output = file_get_contents("templates/register.html");
 
             //add extra elements
-            $extra_elements['csrf_token'] = GenerateCSRF( "register.php"  );
+            $extra_elements['csrf_token'] = $container->getCSRF()->GenerateCSRF( "register.php"  );
 
             //merge
             $output = MergeViewWithData( $output, $data );

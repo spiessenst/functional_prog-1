@@ -25,7 +25,7 @@ PrintNavbar();
             $row = $data[0]; //there's only 1 row in data
 
             //add extra elements
-            $extra_elements['csrf_token'] = GenerateCSRF( "stad_form.php"  );
+            $extra_elements['csrf_token'] = $container->getCSRF()->GenerateCSRF( "stad_form.php"  );
             $landdata = $container->getDBmanager()->GetData( "select lan_id, lan_land from land" );
             $extra_elements['select_land'] = MakeSelect( $fkey = 'img_lan_id',
                                                                                             $value = $row['img_lan_id'] ,

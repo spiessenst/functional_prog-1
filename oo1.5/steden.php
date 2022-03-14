@@ -16,14 +16,9 @@ PrintNavbar();
 
 <?php
 
-//$ms->ShowErrors();
+
  $container->getMessageService()->ShowErrors();
  $container->getMessageService()->ShowInfos();
-//$ms->ShowInfos();
-
-//$container = new Container($configuration);
-//$CityLoader = $container->getCityLoader();
-//$city = $CityLoader->getCities();
 
 
     //get template

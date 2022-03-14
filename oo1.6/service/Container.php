@@ -17,6 +17,12 @@ class Container
 
     private $MessageService;
 
+    private $Sanitization;
+
+    private $CompareWithDatabase;
+
+    private $csrf;
+
 
 
     /**
@@ -115,5 +121,50 @@ class Container
         }
         return $this->MessageService;
     }
+
+    /**
+     * @return Sanitization
+     */
+
+    public function getSanitization() : Sanitization
+    {
+        if($this->Sanitization === null){
+
+            $this->Sanitization = new Sanitization();
+
+        }
+        return $this->Sanitization;
+
+    }
+
+    /**
+     * @return CompareWithDatabase
+     */
+    public function getCompareWithDatabase() : CompareWithDatabase
+    {
+        if($this->CompareWithDatabase === null){
+
+            $this->CompareWithDatabase = new CompareWithDatabase($this->getDBmanager() , $this->getMessageService());
+
+        }
+        return $this->CompareWithDatabase;
+
+    }
+
+    /**
+     * @return CSRF
+     */
+    public function getCSRF() : CSRF
+    {
+        if($this->csrf === null){
+
+            $this->csrf = new CSRF();
+
+        }
+        return $this->csrf;
+
+    }
+
+
 
 }

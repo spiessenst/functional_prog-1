@@ -20,9 +20,3 @@ function MakeSelect( $fkey, $value, $data )
 
     return $select;
 }
-
-function MakeCheckbox( )
-{
-
-}
-

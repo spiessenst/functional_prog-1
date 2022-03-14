@@ -549,3 +549,267 @@
 2022-03-10 15:18:49 - select lan_id, lan_land from land
 2022-03-10 15:18:53 - SHOW FULL COLUMNS FROM image
 2022-03-10 15:18:53 - UPDATE image SET  img_title = 'Big Ben!'  ,  img_filename = 'london.jpg'  ,  img_width = '7899'  ,  img_height = '1200'  ,  img_lan_id = '5'  WHERE img_id = 1 
+2022-03-10 18:43:11 - select * from image where img_id=1
+2022-03-10 18:43:11 - select lan_id, lan_land from land
+2022-03-10 18:43:14 - SHOW FULL COLUMNS FROM image
+2022-03-10 18:43:14 - UPDATE image SET  img_title = 'Big Ben!'  ,  img_filename = 'london.jpg'  ,  img_width = '7899'  ,  img_height = '1200'  ,  img_lan_id = '5'  WHERE img_id = 1 
+2022-03-10 18:44:26 - SHOW FULL COLUMNS FROM user
+2022-03-10 18:44:26 - SELECT * FROM user WHERE usr_email=''
+2022-03-10 18:44:35 - SHOW FULL COLUMNS FROM user
+2022-03-10 18:44:35 - SELECT * FROM user WHERE usr_email='an@archan.be'
+2022-03-10 18:44:35 - INSERT INTO user SET  usr_voornaam = ''  ,  usr_naam = 'Schoenmaekers'  ,  usr_email = 'an@archan.be'  ,  usr_password = '$2y$10$G1MYdCTNFsrJrfH4ZU/vb.paAaqSjSKmKltWNtr/VTQNXD.hTbs6S' 
+2022-03-10 18:45:57 - SHOW FULL COLUMNS FROM user
+2022-03-10 18:45:57 - SELECT * FROM user WHERE usr_email='an@archan.be'
+2022-03-10 18:45:57 - INSERT INTO user SET  usr_voornaam = ''  ,  usr_naam = ''  ,  usr_email = 'an@archan.be'  ,  usr_password = '$2y$10$3vf3dZTBso4OA9f3vmiYnuWhhdWlc4ZuWsR9azqmSa1hUEXJ/DU5.' 
+2022-03-10 18:47:46 - SHOW FULL COLUMNS FROM user
+2022-03-10 18:47:46 - SELECT * FROM user WHERE usr_email='spiessenst@gmail.com'
+2022-03-10 18:47:51 - SHOW FULL COLUMNS FROM user
+2022-03-10 18:47:51 - SELECT * FROM user WHERE usr_email='spiessenst@gmail.com'
+2022-03-13 11:17:06 - SELECT * FROM user WHERE usr_email='spiessenst@gmail.com'
+2022-03-13 11:18:10 - select * from image where img_id=1
+2022-03-13 11:18:10 - select lan_id, lan_land from land
+2022-03-13 11:24:36 - select * from image where img_id=1
+2022-03-13 11:24:36 - select lan_id, lan_land from land
+2022-03-13 11:24:41 - select * from image where img_id=1
+2022-03-13 11:24:41 - select lan_id, lan_land from land
+2022-03-13 11:24:45 - SHOW FULL COLUMNS FROM image
+2022-03-13 11:24:45 - UPDATE image SET  img_title = 'Big Ben!n'  ,  img_filename = 'london.jpg'  ,  img_width = '7899'  ,  img_height = '1200'  ,  img_lan_id = '5'  WHERE img_id = 1 
+2022-03-13 11:24:50 - SHOW FULL COLUMNS FROM user
+2022-03-13 11:24:51 - SELECT * FROM user WHERE usr_email='spiessenst@gmail.com'
+2022-03-13 11:24:51 - SHOW FULL COLUMNS FROM user
+2022-03-13 11:24:51 - SELECT * FROM user WHERE usr_email='spiessenst@gmail.com'
+2022-03-13 11:24:56 - SHOW FULL COLUMNS FROM user
+2022-03-13 11:24:56 - SELECT * FROM user WHERE usr_email='spies'
+2022-03-13 11:33:46 - select * from image where img_id=1
+2022-03-13 11:33:46 - select lan_id, lan_land from land
+2022-03-13 11:36:05 - select * from image where img_id=1
+2022-03-13 11:36:05 - select lan_id, lan_land from land
+2022-03-13 11:36:07 - SHOW FULL COLUMNS FROM image
+2022-03-13 11:36:07 - UPDATE image SET  img_title = 'Big Ben!nss'  ,  img_filename = 'london.jpg'  ,  img_width = '7899'  ,  img_height = '1200'  ,  img_lan_id = '5'  WHERE img_id = 1 
+2022-03-13 12:06:00 - select * from image where img_id=1
+2022-03-13 12:06:00 - select lan_id, lan_land from land
+2022-03-13 12:06:03 - SHOW FULL COLUMNS FROM image
+2022-03-13 12:06:03 - UPDATE image SET  img_title = 'Big Ben!'  ,  img_filename = 'london.jpg'  ,  img_width = '7899'  ,  img_height = '1200'  ,  img_lan_id = '5'  WHERE img_id = 1 
+2022-03-13 12:06:17 - SHOW FULL COLUMNS FROM user
+2022-03-13 12:06:17 - SELECT * FROM user WHERE usr_email='spiessenst@gmail.com'
+2022-03-13 12:06:23 - SHOW FULL COLUMNS FROM user
+2022-03-13 12:06:23 - SELECT * FROM user WHERE usr_email=''
+2022-03-13 13:10:28 - select * from image where img_id=1
+2022-03-13 13:10:28 - select lan_id, lan_land from land
+2022-03-13 13:10:33 - SHOW FULL COLUMNS FROM image
+2022-03-13 13:10:33 - UPDATE image SET  img_title = 'Big Ben!sss'  ,  img_filename = 'london.jpg'  ,  img_width = '7899'  ,  img_height = '1200'  ,  img_lan_id = '5'  WHERE img_id = 1 
+2022-03-13 13:10:36 - select * from image where img_id=1
+2022-03-13 13:10:36 - select lan_id, lan_land from land
+2022-03-13 13:10:39 - SHOW FULL COLUMNS FROM image
+2022-03-13 13:10:39 - UPDATE image SET  img_title = 'Big Ben!'  ,  img_filename = 'london.jpg'  ,  img_width = '7899'  ,  img_height = '1200'  ,  img_lan_id = '5'  WHERE img_id = 1 
+2022-03-13 20:05:48 - SELECT * FROM images
+2022-03-13 20:05:57 - SELECT * FROM image
+2022-03-13 20:05:59 - select * from image where img_id=1
+2022-03-13 20:05:59 - select lan_id, lan_land from land
+2022-03-13 20:06:03 - SHOW FULL COLUMNS FROM image
+2022-03-13 20:06:03 - UPDATE image SET  img_title = 'Big Ben!s'  ,  img_filename = 'london.jpg'  ,  img_width = '7899'  ,  img_height = '1200'  ,  img_lan_id = '5'  WHERE img_id = 1 
+2022-03-13 20:06:03 - SELECT * FROM image
+2022-03-13 20:06:05 - select * from image where img_id=1
+2022-03-13 20:06:05 - select lan_id, lan_land from land
+2022-03-13 20:24:44 - select * from image where img_id=1
+2022-03-13 20:24:44 - select lan_id, lan_land from land
+2022-03-13 20:24:47 - UPDATE image SET  img_title = 'Big Ben!'  ,  img_filename = 'london.jpg'  ,  img_width = '7899qxqxq'  ,  img_height = '1200'  ,  img_lan_id = '5'  WHERE img_id = 1 
+2022-03-13 20:24:47 - SELECT * FROM image
+2022-03-13 20:24:53 - select * from image where img_id=1
+2022-03-13 20:24:53 - select lan_id, lan_land from land
+2022-03-13 20:24:56 - UPDATE image SET  img_title = 'Big Ben!s'  ,  img_filename = 'london.jpg'  ,  img_width = '7899'  ,  img_height = '1200'  ,  img_lan_id = '5'  WHERE img_id = 1 
+2022-03-13 20:24:56 - SELECT * FROM image
+2022-03-13 20:24:58 - select * from image where img_id=1
+2022-03-13 20:24:58 - select lan_id, lan_land from land
+2022-03-13 20:25:03 - UPDATE image SET  img_title = 'Big Ben!'  ,  img_filename = 'london.jpg'  ,  img_width = '7899sqxsqxqsx'  ,  img_height = '1200'  ,  img_lan_id = '5'  WHERE img_id = 1 
+2022-03-13 20:25:03 - SELECT * FROM image
+2022-03-13 20:27:34 - select * from image where img_id=1
+2022-03-13 20:27:34 - select lan_id, lan_land from land
+2022-03-13 20:27:38 - SHOW FULL COLUMNS FROM image
+2022-03-13 20:28:31 - select * from image where img_id=1
+2022-03-13 20:28:31 - select lan_id, lan_land from land
+2022-03-13 20:28:32 - SHOW FULL COLUMNS FROM image
+2022-03-13 20:28:32 - select * from image where img_id=1
+2022-03-13 20:28:32 - select lan_id, lan_land from land
+2022-03-13 20:28:40 - SHOW FULL COLUMNS FROM image
+2022-03-13 20:28:40 - UPDATE image SET  img_title = 'Big Ben!s'  ,  img_filename = 'london.jpg'  ,  img_width = '7899'  ,  img_height = '1200'  ,  img_lan_id = '5'  WHERE img_id = 1 
+2022-03-13 20:28:40 - SELECT * FROM image
+2022-03-13 20:28:43 - select * from image where img_id=1
+2022-03-13 20:28:43 - select lan_id, lan_land from land
+2022-03-13 20:31:19 - SHOW FULL COLUMNS FROM user
+2022-03-13 20:31:19 - SELECT * FROM user WHERE usr_email='dsfsdf'
+2022-03-13 20:31:24 - SHOW FULL COLUMNS FROM user
+2022-03-13 20:31:24 - SELECT * FROM user WHERE usr_email='spiessenst@gmail.com'
+2022-03-13 20:31:30 - SHOW FULL COLUMNS FROM user
+2022-03-13 20:31:30 - SELECT * FROM user WHERE usr_email='spiessemail.com'
+2022-03-13 20:41:23 - SELECT * FROM image
+2022-03-13 20:44:04 - SELECT * FROM user WHERE usr_email='an@archan.be'
+2022-03-13 20:44:04 - SELECT * FROM image
+2022-03-13 20:44:15 - SELECT * FROM user WHERE usr_email='spiessenst@gmail.com'
+2022-03-13 20:44:16 - SELECT * FROM image
+2022-03-13 20:45:28 - SELECT * FROM user WHERE usr_email='an@archan.be'
+2022-03-13 20:45:28 - SELECT * FROM image
+2022-03-13 20:45:59 - SELECT * FROM user WHERE usr_email='spiessenst@gmail.com'
+2022-03-13 20:45:59 - SELECT * FROM image
+2022-03-13 20:46:03 - select * from image where img_id=1
+2022-03-13 20:46:03 - select lan_id, lan_land from land
+2022-03-13 20:46:09 - SHOW FULL COLUMNS FROM image
+2022-03-13 20:46:09 - UPDATE image SET  img_title = 'Big Ben!'  ,  img_filename = 'london.jpg'  ,  img_width = '7899'  ,  img_height = '1200'  ,  img_lan_id = '5'  WHERE img_id = 1 
+2022-03-13 20:46:09 - SELECT * FROM image
+2022-03-13 20:46:16 - SELECT * FROM image
+2022-03-13 20:46:19 - SELECT * FROM image
+2022-03-13 20:46:26 - SELECT * FROM image
+2022-03-13 21:12:05 - SELECT * FROM image
+2022-03-13 21:12:08 - select * from image where img_id=1
+2022-03-13 21:12:08 - select lan_id, lan_land from land
+2022-03-13 21:34:05 - SELECT * FROM image
+2022-03-13 21:53:55 - select * from image where img_id=2
+2022-03-13 21:53:55 - select lan_id, lan_land from land
+2022-03-13 21:54:04 - SELECT * FROM image
+2022-03-13 21:54:07 - select * from image where img_id=1
+2022-03-13 21:54:07 - select lan_id, lan_land from land
+2022-03-13 21:54:09 - SELECT * FROM image
+2022-03-13 21:54:11 - select * from image where img_id=8
+2022-03-13 21:54:11 - select lan_id, lan_land from land
+2022-03-13 21:54:14 - SHOW FULL COLUMNS FROM image
+2022-03-13 21:54:14 - UPDATE image SET  img_title = 'Familia'  ,  img_filename = 'spanje.jpg'  ,  img_width = '4555'  ,  img_height = '5555'  ,  img_lan_id = '7'  WHERE img_id = 8 
+2022-03-13 21:54:14 - SELECT * FROM image
+2022-03-14 09:01:51 - SELECT * FROM image
+2022-03-14 09:01:52 - select * from image where img_id=1
+2022-03-14 09:01:52 - select lan_id, lan_land from land
+2022-03-14 09:01:55 - SHOW FULL COLUMNS FROM image
+2022-03-14 09:03:22 - select * from image where img_id=1
+2022-03-14 09:03:22 - select lan_id, lan_land from land
+2022-03-14 09:03:24 - SHOW FULL COLUMNS FROM image
+2022-03-14 09:05:13 - select * from image where img_id=1
+2022-03-14 09:05:13 - select lan_id, lan_land from land
+2022-03-14 09:05:15 - SHOW FULL COLUMNS FROM image
+2022-03-14 09:06:42 - select * from image where img_id=1
+2022-03-14 09:06:42 - select lan_id, lan_land from land
+2022-03-14 09:06:44 - SHOW FULL COLUMNS FROM image
+2022-03-14 09:06:44 - select * from image where img_id=1
+2022-03-14 09:06:44 - select lan_id, lan_land from land
+2022-03-14 09:06:58 - SHOW FULL COLUMNS FROM image
+2022-03-14 09:06:58 - UPDATE image SET  img_title = ''  ,  img_filename = 'london.jpg'  ,  img_width = '7899'  ,  img_height = '1200'  ,  img_lan_id = '5'  WHERE img_id = 1 
+2022-03-14 09:06:58 - SELECT * FROM image
+2022-03-14 09:07:07 - select * from image where img_id=1
+2022-03-14 09:07:07 - select lan_id, lan_land from land
+2022-03-14 09:07:10 - SHOW FULL COLUMNS FROM image
+2022-03-14 09:07:10 - UPDATE image SET  img_title = 'Big Ben!'  ,  img_filename = 'london.jpg'  ,  img_width = '7899'  ,  img_height = '1200'  ,  img_lan_id = '5'  WHERE img_id = 1 
+2022-03-14 09:07:11 - SELECT * FROM image
+2022-03-14 09:07:22 - select * from image where img_id=1
+2022-03-14 09:07:22 - select lan_id, lan_land from land
+2022-03-14 09:09:06 - SHOW FULL COLUMNS FROM image
+2022-03-14 09:09:06 - UPDATE image SET  img_title = 'Big Ben!'  ,  img_filename = 'london.jpg'  ,  img_width = '7899'  ,  img_height = '1200'  ,  img_lan_id = '5'  WHERE img_id = 1 
+2022-03-14 09:09:06 - SELECT * FROM image
+2022-03-14 09:09:27 - SELECT * FROM image
+2022-03-14 09:09:29 - select * from image where img_id=1
+2022-03-14 09:14:00 - select * from image where img_id=1
+2022-03-14 09:14:00 - select lan_id, lan_land from land
+2022-03-14 09:14:03 - select * from image where img_id=1
+2022-03-14 09:14:03 - select lan_id, lan_land from land
+2022-03-14 09:14:03 - select * from image where img_id=1
+2022-03-14 09:14:03 - select lan_id, lan_land from land
+2022-03-14 09:14:04 - select * from image where img_id=1
+2022-03-14 09:14:04 - select lan_id, lan_land from land
+2022-03-14 09:14:04 - select * from image where img_id=1
+2022-03-14 09:14:04 - select lan_id, lan_land from land
+2022-03-14 09:14:04 - select * from image where img_id=1
+2022-03-14 09:14:04 - select lan_id, lan_land from land
+2022-03-14 09:14:04 - select * from image where img_id=1
+2022-03-14 09:14:04 - select lan_id, lan_land from land
+2022-03-14 09:14:08 - SHOW FULL COLUMNS FROM image
+2022-03-14 09:14:08 - UPDATE image SET  img_title = 'Big Ben!s'  ,  img_filename = 'london.jpg'  ,  img_width = '7899'  ,  img_height = '1200'  ,  img_lan_id = '5'  WHERE img_id = 1 
+2022-03-14 09:14:08 - SELECT * FROM image
+2022-03-14 09:14:57 - select * from image where img_id=1
+2022-03-14 09:14:57 - select lan_id, lan_land from land
+2022-03-14 09:17:18 - select * from image where img_id=1
+2022-03-14 09:17:18 - select lan_id, lan_land from land
+2022-03-14 09:19:03 - select * from image where img_id=1
+2022-03-14 09:19:03 - select lan_id, lan_land from land
+2022-03-14 09:19:07 - SHOW FULL COLUMNS FROM image
+2022-03-14 09:19:07 - UPDATE image SET  img_title = 'Big Ben!sd'  ,  img_filename = 'london.jpg'  ,  img_width = '7899'  ,  img_height = '1200'  ,  img_lan_id = '5'  WHERE img_id = 1 
+2022-03-14 09:19:07 - SELECT * FROM image
+2022-03-14 09:19:09 - select * from image where img_id=1
+2022-03-14 09:19:09 - select lan_id, lan_land from land
+2022-03-14 09:19:12 - SHOW FULL COLUMNS FROM image
+2022-03-14 09:19:12 - UPDATE image SET  img_title = 'Big Ben!'  ,  img_filename = 'london.jpg'  ,  img_width = '7899'  ,  img_height = '1200'  ,  img_lan_id = '5'  WHERE img_id = 1 
+2022-03-14 09:19:12 - SELECT * FROM image
+2022-03-14 09:20:06 - select * from image where img_id=1
+2022-03-14 09:20:06 - select lan_id, lan_land from land
+2022-03-14 09:20:09 - SHOW FULL COLUMNS FROM image
+2022-03-14 09:20:09 - select * from image where img_id=1
+2022-03-14 09:20:09 - select lan_id, lan_land from land
+2022-03-14 09:20:12 - SELECT * FROM image
+2022-03-14 09:20:32 - SHOW FULL COLUMNS FROM user
+2022-03-14 09:20:32 - SELECT * FROM user WHERE usr_email='bart@blnl'
+2022-03-14 09:20:38 - SHOW FULL COLUMNS FROM user
+2022-03-14 09:20:38 - SELECT * FROM user WHERE usr_email='bart@blnl.be'
+2022-03-14 09:20:38 - INSERT INTO user SET  usr_voornaam = 'bart'  ,  usr_naam = 'sdsd'  ,  usr_email = 'bart@blnl.be'  ,  usr_password = '$2y$10$WT9G5FlfLVu8UjWPf5gbD.Q7s3ujfXSyYs7waOmLRFXEg3daCHOCq' 
+2022-03-14 09:20:38 - SELECT * FROM image
+2022-03-14 09:20:48 - SELECT * FROM image
+2022-03-14 09:20:51 - SELECT * FROM image
+2022-03-14 09:20:59 - SELECT * FROM user WHERE usr_email='spiessenst@gmail.com'
+2022-03-14 09:21:00 - SELECT * FROM image
+2022-03-14 09:21:13 - SELECT * FROM user WHERE usr_email='an@archan.be'
+2022-03-14 09:21:13 - SELECT * FROM image
+2022-03-14 09:21:21 - SELECT * FROM image
+2022-03-14 09:21:54 - SELECT * FROM image
+2022-03-14 09:21:57 - SELECT * FROM image
+2022-03-14 09:22:44 - SELECT * FROM image
+2022-03-14 09:22:46 - select * from image where img_id=1
+2022-03-14 09:22:46 - select lan_id, lan_land from land
+2022-03-14 09:22:49 - SHOW FULL COLUMNS FROM image
+2022-03-14 09:22:49 - select * from image where img_id=1
+2022-03-14 09:22:49 - select lan_id, lan_land from land
+2022-03-14 09:25:23 - SELECT * FROM user WHERE usr_email='spiessenst@gmail.com'
+2022-03-14 09:25:23 - SELECT * FROM image
+2022-03-14 09:31:49 - SELECT * FROM image
+2022-03-14 09:31:55 - SELECT * FROM image
+2022-03-14 09:34:07 - SELECT * FROM image
+2022-03-14 09:38:16 - SELECT * FROM image
+2022-03-14 09:38:28 - SELECT * FROM user WHERE usr_email='spiessenst@gmail.com'
+2022-03-14 09:38:28 - SELECT * FROM image
+2022-03-14 09:51:31 - SELECT * FROM image
+2022-03-14 09:51:33 - SHOW FULL COLUMNS FROM user
+2022-03-14 09:51:33 - SELECT * FROM user WHERE usr_email=''
+2022-03-14 09:51:46 - SELECT * FROM image
+2022-03-14 09:51:49 - select * from image where img_id=1
+2022-03-14 09:51:49 - select lan_id, lan_land from land
+2022-03-14 09:51:52 - SHOW FULL COLUMNS FROM image
+2022-03-14 09:51:52 - select * from image where img_id=1
+2022-03-14 09:51:52 - select lan_id, lan_land from land
+2022-03-14 09:51:57 - SHOW FULL COLUMNS FROM image
+2022-03-14 09:51:57 - UPDATE image SET  img_title = 'Big Ben!d'  ,  img_filename = 'london.jpg'  ,  img_width = '7899'  ,  img_height = '1200'  ,  img_lan_id = '5'  WHERE img_id = 1 
+2022-03-14 09:51:57 - SELECT * FROM image
+2022-03-14 09:51:59 - select * from image where img_id=1
+2022-03-14 09:51:59 - select lan_id, lan_land from land
+2022-03-14 09:54:56 - SHOW FULL COLUMNS FROM image
+2022-03-14 09:54:56 - select * from image where img_id=1
+2022-03-14 09:54:56 - select lan_id, lan_land from land
+2022-03-14 09:54:58 - SELECT * FROM user WHERE usr_email=''
+2022-03-14 09:55:02 - SELECT * FROM user WHERE usr_email='spiessenst@gmail.com'
+2022-03-14 09:55:09 - SELECT * FROM user WHERE usr_email='spiessenst@gmail.com'
+2022-03-14 09:55:09 - SELECT * FROM image
+2022-03-14 09:59:54 - SELECT * FROM user WHERE usr_email=''
+2022-03-14 10:00:00 - SELECT * FROM user WHERE usr_email='spiessenst@gmail.com'
+2022-03-14 10:00:00 - SELECT * FROM image
+2022-03-14 10:05:24 - select * from image where img_id=1
+2022-03-14 10:05:24 - select lan_id, lan_land from land
+2022-03-14 10:05:27 - SHOW FULL COLUMNS FROM image
+2022-03-14 10:05:27 - UPDATE image SET  img_title = 'Big Ben!'  ,  img_filename = 'london.jpg'  ,  img_width = '7899'  ,  img_height = '1200'  ,  img_lan_id = '5'  WHERE img_id = 1 
+2022-03-14 10:05:27 - SELECT * FROM image
+2022-03-14 10:21:44 - select * from image where img_id=1
+2022-03-14 10:21:44 - select lan_id, lan_land from land
+2022-03-14 14:05:27 - SELECT * FROM image
+2022-03-14 14:05:44 - SELECT * FROM user WHERE usr_email='spiessenst@gmail.com'
+2022-03-14 14:05:44 - SELECT * FROM image
+2022-03-14 14:21:45 - SELECT * FROM user WHERE usr_email='spiessenst@gmail.com'
+2022-03-14 14:21:45 - SELECT * FROM image
+2022-03-14 14:21:50 - SHOW FULL COLUMNS FROM user
+2022-03-14 14:21:50 - SELECT * FROM user WHERE usr_email=''
+2022-03-14 14:21:52 - SELECT * FROM image
+2022-03-14 14:22:04 - SELECT * FROM user WHERE usr_email='spiessenst@gmail.com'
+2022-03-14 14:22:04 - SELECT * FROM image
+2022-03-14 14:22:08 - SHOW FULL COLUMNS FROM user
+2022-03-14 14:22:08 - SELECT * FROM user WHERE usr_email='spiessenst@gmail.com'

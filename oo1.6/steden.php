@@ -16,6 +16,8 @@ PrintNavbar();
 
 <?php
 
+
+
 //$ms->ShowErrors();
  $container->getMessageService()->ShowErrors();
  $container->getMessageService()->ShowInfos();
@@ -30,7 +32,8 @@ PrintNavbar();
     $template = file_get_contents("templates/column.html");
 
     //merge
-    $output = MergeViewWithDataObj( $template, $container->getCityLoader()->getCities() );
+
+    $output = MergeViewWithData( $template, $container->getDBmanager()->GetData("SELECT * FROM image") );
     print $output;
 ?>
 

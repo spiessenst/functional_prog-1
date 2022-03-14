@@ -7,8 +7,6 @@ require_once "autoload.php";
 
 SaveFormData($container);
 
-
-
 function SaveFormData($container)
 {
 
@@ -23,9 +21,8 @@ function SaveFormData($container)
         $_SESSION['lastest_csrf'] = "";
 
         //sanitization
-        $_POST = StripSpaces($_POST);
-        $_POST = ConvertSpecialChars($_POST);
-
+        $_POST = $container->getSanitization()->StripSpaces($_POST);
+        $_POST = $container->getSanitization()->ConvertSpecialChars($_POST);
 
 
         $table = $pkey = $update = $insert = $where = $str_keys_values = "";
@@ -40,15 +37,17 @@ function SaveFormData($container)
         //validation
         $sending_form_uri = $_SERVER['HTTP_REFERER'];
 
-        CompareWithDatabase( $table, $pkey ,$container);
+       // CompareWithDatabase( $table, $pkey ,$container);
+
+        $container->getCompareWithDatabase()->CompareWithDatabase($table, $pkey);
 
         //Validaties voor het registratieformulier
         if ( $table == "user")
         {
 
-                 ValidateUsrPassword( $_POST['usr_password'] , $container );
-                ValidateUsrEmail( $_POST['usr_email'] , $container);
-                CheckUniqueUsrEmail( $_POST['usr_email'] ,$container );
+            $container->getCompareWithDatabase()->ValidateUsrPassword( $_POST['usr_password']  );
+            $container->getCompareWithDatabase()->ValidateUsrEmail( $_POST['usr_email'] );
+            $container->getCompareWithDatabase()->CheckUniqueUsrEmail( $_POST['usr_email']  );
 
         }
 
@@ -104,10 +103,7 @@ function SaveFormData($container)
         //extend SQL with WHERE
         $sql .= $where;
 
-        //run SQL
-       // $Logger = new Logger();
-      //  $dbm = new DBManager($Logger);
-       // $result = $dbm->ExecuteSQL( $sql );
+
         $result = $container->getDBManager()->ExecuteSQL( $sql );
 
         //output if not redirected

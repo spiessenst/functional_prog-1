@@ -20,11 +20,15 @@ PrintJumbo( $title = "Login", $subtitle = "" );
             $output = file_get_contents("templates/login.html");
 
             //add extra elements
-            $extra_elements['csrf_token'] = GenerateCSRF( "login.php"  );
+            $extra_elements['csrf_token'] = $container->getCSRF()->GenerateCSRF( "login.php"  );
 
             //merge
             $output = MergeViewWithData( $output, $data );
             $output = MergeViewWithExtraElements( $output, $extra_elements );
+
+        $output = MergeViewWithErrors( $output,  $container->getMessageService()->GetInputErrors());
+
+        $output = RemoveEmptyErrorTags( $output, $data );
 
             print $output;
         ?>

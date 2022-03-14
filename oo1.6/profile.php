@@ -18,7 +18,7 @@ PrintNavbar();
             $user = $_SESSION['user'];
 
             //add extra elements
-            $extra_elements['csrf_token'] = GenerateCSRF( "stad_form.php"  );
+            $extra_elements['csrf_token'] = $container->getCSRF()->GenerateCSRF( "profile.php"  );
 
 
 

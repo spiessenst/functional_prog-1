@@ -48,8 +48,11 @@ class Merger
             $returnvalue = $template;
         }
 
+
         return $returnvalue;
     }
+
+
 
 
     public function MergeViewWithExtraElements( $template, $elements )

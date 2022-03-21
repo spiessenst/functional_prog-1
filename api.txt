@@ -1,0 +1,4 @@
+api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid=3321b07339bef6f1a43a0f65b53db937
+
+
+api.openweathermap.org/data/2.5/weather?q=gent&appid=3321b07339bef6f1a43a0f65b53db937&lang=en
